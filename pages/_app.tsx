@@ -1,12 +1,14 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+// pages/_app.tsx
 import { ApolloProvider } from "@apollo/client";
-import client from "@/graphql/apolloClient";
+import client from "../lib/apolloClient";
 
-export default function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
       <Component {...pageProps} />
     </ApolloProvider>
   );
 }
+
+export default MyApp;
+
