@@ -1,8 +1,8 @@
 // pages/_app.tsx
-import type { AppProps } from "next/app";
-import ErrorBoundary from "@/components/ErrorBoundary";
-import { ApolloProvider } from "@apollo/client";
-import client from "@/lib/apolloClient";
+import type { AppProps } from 'next/app';
+import { ApolloProvider } from '@apollo/client';
+import client from '@/lib/apolloClient';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,5 +15,3 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
-
-
