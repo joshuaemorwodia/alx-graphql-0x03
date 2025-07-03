@@ -17,3 +17,4 @@ npm run dev
 - ErrorBoundary in \pages/_app.tsx\
 - GraphQL episode fetching
 - Graceful fallback UI
+ Add README and integrate ErrorBoundary with ApolloProvider in _app.tsx
