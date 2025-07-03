@@ -1,5 +1,4 @@
-// components/ErrorBoundary.tsx
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
 interface State {
   hasError: boolean;
@@ -20,16 +19,16 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error("Error caught by ErrorBoundary:", error, errorInfo);
+    console.error('ErrorBoundary caught an error', error, errorInfo);
   }
 
   render() {
     if (this.state.hasError) {
       return (
         <div>
-          <h2>Oops, there is an error!</h2>
+          <h2>Oops, something went wrong.</h2>
           <button onClick={() => this.setState({ hasError: false })}>
-            Try again?
+            Try Again
           </button>
         </div>
       );
