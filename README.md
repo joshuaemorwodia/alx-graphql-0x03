@@ -1,17 +1,32 @@
-# ALX GraphQL Project 0x03 – Error Boundary Integration
+# ALX GraphQL 0x03 - ErrorBoundary and Apollo Client Setup
 
-## Project Overview
-This project is part of the ALX Full Stack Software Engineering program. It demonstrates how to integrate an `ErrorBoundary` class component into a Next.js app using Apollo Client.
+This project integrates Apollo Client with a custom `ErrorBoundary` in a Next.js application.
 
-## What Was Implemented
-- ✅ Apollo Client setup
-- ✅ GraphQL queries with `@apollo/client`
-- ✅ `ErrorBoundary` class component created in `components/ErrorBoundary.tsx`
-- ✅ `ErrorBoundary` was wrapped around the `Component` in `pages/_app.tsx`
+## Features
+
+- Apollo Client setup for GraphQL queries
+- Custom ErrorBoundary class component to catch and handle errors
+- `_app.tsx` wraps the app with both `ApolloProvider` and `ErrorBoundary`
 
 ## How to Run
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/joshuaemorwodia/alx-graphql-0x03.git
-   cd alx-graphql-0x03/alx-rick-and-morty-app
+```bash
+npm install
+npm run dev
+Open http://localhost:3000 to view the app.
+
+Author
+Joshua Emorwodia – ALX Student
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ After confirming those:
+
+- Push again if you made any more changes.
+- Click **"Request a new review"** on the ALX portal.
+
+Let me know the outcome or send a new screenshot if it still fails. I’ll walk you through the next fix ste
